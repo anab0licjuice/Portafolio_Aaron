@@ -3,186 +3,247 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aarón Andrés | Portafolio</title>
-  <meta name="description" content="Portafolio de Aarón Andrés, estudiante de Sistemas Microinformáticos y Redes que está aprendiendo desarrollo web.">
-  <meta name="theme-color" content="#eef2f6">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖧</text></svg>">
+  <title>Aarón Andrés · Portafolio · Sistemas Microinformáticos y Redes</title>
+  <meta name="description" content="Portafolio de Aarón Andrés, estudiante de Sistemas Microinformáticos y Redes que aprende desarrollo web.">
+  <meta name="theme-color" content="#0e3b2b">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230e3b2b'/><text x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23d4ebdc'>AA</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
-  <header class="top">
-    <div class="wrap top__in">
-      <a class="brand" href="#inicio">Aarón Andrés</a>
-      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
-      <nav aria-label="Principal">
-        <ul id="menu">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#formacion">Formación</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Aarón Andrés, ir al inicio">
+        <span class="logo-mark" aria-hidden="true">AA</span>
+        <span class="logo-name">Aarón Andrés</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Abrir menú</span>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li class="menu-cta"><a class="btn btn-primary btn-sm" href="#contacto">Contrátame</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main id="contenido">
-    <section id="inicio" class="hero">
-      <div class="wrap hero__in">
-        <div>
-          <h1>Hola, soy Aarón Andrés.</h1>
-          <p class="lead">Estudio Sistemas Microinformáticos y Redes y estoy aprendiendo desarrollo web. Me gusta montar, configurar y mantener redes y equipos, y llevar lo que aprendo a la web.</p>
+    <!-- INICIO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status"><span class="dot" aria-hidden="true"></span>Disponible para prácticas y primeras oportunidades</p>
+          <h1 id="hero-title">Redes que funcionan y webs que se entienden.</h1>
+          <p class="lead">Soy Aarón Andrés, estudiante de Sistemas Microinformáticos y Redes. Aprendo desarrollo web para unir lo que ocurre dentro de la máquina con lo que ve el usuario.</p>
           <div class="actions">
-            <a class="btn btn--main" href="#proyectos">Ver proyectos</a>
-            <a class="btn" href="#contacto">Contactar</a>
+            <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-ghost" href="#contacto">Hablemos</a>
           </div>
         </div>
-        <svg class="topo" viewBox="0 0 420 350" role="img" aria-label="Esquema de una red: Internet, router, switch y tres equipos conectados">
-          <g class="links" fill="none">
-            <path d="M210 54 V96"/>
-            <path d="M210 140 V190"/>
-            <path d="M210 234 V262 H80 V290"/>
-            <path d="M210 234 V290"/>
-            <path d="M210 234 V262 H340 V290"/>
-          </g>
-          <g class="nodes">
-            <rect x="150" y="14" width="120" height="40" rx="20"/><text x="210" y="39">Internet</text>
-            <rect x="150" y="96" width="120" height="44" rx="6"/><text x="210" y="123">Router / NAT</text>
-            <rect x="150" y="190" width="120" height="44" rx="6"/><text x="210" y="217">Switch</text>
-            <rect x="30" y="290" width="100" height="44" rx="6"/><text x="80" y="317">PC 1</text>
-            <rect x="160" y="290" width="100" height="44" rx="6"/><text x="210" y="317">PC 2</text>
-            <rect x="290" y="290" width="100" height="44" rx="6"/><text x="340" y="317">Servidor</text>
-          </g>
-          <g class="leds">
-            <circle cx="260" cy="106" r="3"/><circle cx="260" cy="200" r="3"/>
-            <circle cx="120" cy="300" r="3"/><circle cx="250" cy="300" r="3"/><circle cx="380" cy="300" r="3"/>
-          </g>
-        </svg>
+        <figure class="hero-visual" aria-label="Ilustración interactiva de una red de nodos conectados">
+          <canvas id="net" aria-hidden="true"></canvas>
+          <figcaption>Mueve el cursor: los nodos se conectan contigo.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section id="sobre-mi" class="sec">
-      <div class="wrap sec__in">
-        <h2>Sobre mí</h2>
-        <div class="body">
-          <p>Soy estudiante y me apasiona entender cómo funcionan los equipos y las redes por dentro. Aprendo haciendo: monto laboratorios, rompo cosas, las arreglo y lo apunto para no olvidarlo.</p>
-          <p>Ahora quiero sumar el desarrollo web a lo que ya sé de sistemas y redes, para poder crear herramientas propias y publicarlas. Busco prácticas y proyectos donde seguir aprendiendo con gente que sepa más que yo.</p>
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi" aria-labelledby="t-sobre">
+      <div class="container split">
+        <div>
+          <h2 id="t-sobre">Me gusta saber por qué algo funciona</h2>
+        </div>
+        <div class="prose">
+          <p>Estudio el grado medio de Sistemas Microinformáticos y Redes y estoy construyendo mi camino hacia el desarrollo web. Empecé montando y configurando equipos; ahora quiero que lo que hago también se vea bien y se use sin esfuerzo.</p>
+          <p>Trabajo con calma y método: pruebo, anoto lo que falla y lo arreglo. Prefiero una solución sencilla y documentada a una complicada que nadie entiende.</p>
+          <p>A un equipo le aporto ganas de aprender rápido, orden con los detalles y una mirada que entiende tanto la parte técnica como la de quien usa el resultado.</p>
+          <ul class="values">
+            <li><strong>Curiosidad</strong> Investigo hasta entender el origen del problema.</li>
+            <li><strong>Constancia</strong> Avanzo un poco cada día y lo dejo anotado.</li>
+            <li><strong>Claridad</strong> Explico lo técnico con palabras sencillas.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="formacion" class="sec">
-      <div class="wrap sec__in">
-        <h2>Formación académica</h2>
-        <div class="body">
-          <dl class="rows">
-            <div>
-              <dt>Grado Medio en Sistemas Microinformáticos y Redes</dt>
-              <dd>En curso. Hardware, redes, sistemas operativos y bases de datos.</dd>
-            </div>
-            <div>
-              <dt>Graduado en Educación Secundaria Obligatoria (ESO)</dt>
-              <dd>Titulación completada, con acceso a la Formación Profesional.</dd>
-            </div>
-          </dl>
-        </div>
+    <!-- FORMACIÓN -->
+    <section class="section tint" id="formacion" aria-labelledby="t-form">
+      <div class="container split">
+        <div><h2 id="t-form">Formación académica</h2></div>
+        <ol class="timeline">
+          <li>
+            <h3>CFGM Sistemas Microinformáticos y Redes</h3>
+            <p class="meta">En curso</p>
+            <p>Montaje y mantenimiento de equipos, sistemas operativos, redes locales, aplicaciones ofimáticas y seguridad informática.</p>
+          </li>
+          <li>
+            <h3>Graduado en Educación Secundaria Obligatoria (ESO)</h3>
+            <p class="meta">Completada</p>
+            <p>Base académica con la que accedí a la formación profesional.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section id="habilidades" class="sec">
-      <div class="wrap sec__in">
-        <h2>Habilidades</h2>
-        <div class="body skills">
-          <div>
-            <h3>Técnicas</h3>
-            <ul class="chips">
-              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git y GitHub</li>
-              <li>Redes TCP/IP</li><li>DHCP</li><li>NAT</li><li>SSH</li>
-              <li>GNS3</li><li>Ubuntu y Windows</li><li>Bases de datos</li><li>Montaje y reparación de hardware</li>
-            </ul>
-          </div>
-          <div>
+    <!-- HABILIDADES -->
+    <section class="section" id="habilidades" aria-labelledby="t-hab">
+      <div class="container">
+        <h2 id="t-hab">Habilidades técnicas y personales</h2>
+        <p class="section-intro">Lo que uso a diario en clase y en mis proyectos, agrupado por área.</p>
+        <div class="skills">
+          <article class="skill-card">
+            <h3>Desarrollo web</h3>
+            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Git y GitHub</li><li>Diseño responsive</li></ul>
+          </article>
+          <article class="skill-card">
+            <h3>Redes</h3>
+            <ul class="chips"><li>TCP/IP</li><li>Direccionamiento y subredes</li><li>Cableado</li><li>Configuración de routers</li></ul>
+          </article>
+          <article class="skill-card">
+            <h3>Sistemas</h3>
+            <ul class="chips"><li>Windows</li><li>Linux</li><li>Máquinas virtuales</li><li>Montaje de hardware</li><li>Diagnóstico de averías</li></ul>
+          </article>
+          <article class="skill-card">
             <h3>Personales</h3>
-            <ul class="chips chips--soft">
-              <li>Aprendizaje autónomo</li><li>Resolución de problemas</li><li>Trato con clientes</li>
-              <li>Trabajo en equipo</li><li>Responsabilidad</li><li>Orden y documentación</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experiencia" class="sec">
-      <div class="wrap sec__in">
-        <h2>Experiencia</h2>
-        <div class="body">
-          <ol class="timeline">
-            <li>
-              <h3>Prácticas (FCT) en la sección de electrónica de una tienda</h3>
-              <p class="meta">Formación en centros de trabajo</p>
-              <p>Atención al cliente, orientación sobre productos de electrónica y trabajo diario con equipos y componentes en un entorno real.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section id="proyectos" class="sec">
-      <div class="wrap sec__in">
-        <h2>Proyectos desarrollados</h2>
-        <div class="body projects">
-          <article class="proj">
-            <h3>Red con DHCP, SSH y Webmin en GNS3</h3>
-            <p>Laboratorio con un servidor DHCP Kea, dos clientes Ubuntu Desktop y un servidor Webmin con acceso por SSH. Todo conectado a un switch central y con salida a Internet mediante NAT.</p>
-            <ul class="chips chips--small"><li>GNS3</li><li>Kea DHCP</li><li>SSH</li><li>Webmin</li><li>NAT</li></ul>
-          </article>
-          <article class="proj">
-            <h3>Panel web educativo de ETFs</h3>
-            <p>Página que explica qué son los ETFs y cómo funcionan las inversiones seguras, con contenido claro para quien empieza.</p>
-            <ul class="chips chips--small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          </article>
-          <article class="proj">
-            <h3>Este portafolio</h3>
-            <p>Web personal responsive y accesible, publicada con GitHub Pages sin frameworks ni dependencias.</p>
-            <ul class="chips chips--small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+            <ul class="chips"><li>Aprendizaje autónomo</li><li>Trabajo en equipo</li><li>Resolución de problemas</li><li>Responsabilidad</li></ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="sec">
-      <div class="wrap sec__in">
-        <h2>Contacto</h2>
-        <div class="body contact">
-          <p>¿Tienes unas prácticas, un proyecto o una duda? Escríbeme y te respondo en cuanto pueda.</p>
-          <p class="mail">
-            <a href="mailto:aaronsamuel2004@gmail.com">aaronsamuel2004@gmail.com</a>
-            <button type="button" class="btn btn--small" id="copy">Copiar correo</button>
-            <span id="copy-msg" role="status"></span>
-          </p>
-          <form id="form" novalidate>
+    <!-- EXPERIENCIA -->
+    <section class="section tint" id="experiencia" aria-labelledby="t-exp">
+      <div class="container split">
+        <div><h2 id="t-exp">Experiencia</h2></div>
+        <ol class="timeline">
+          <!-- EDITAR: sustituye por tus datos reales -->
+          <li>
+            <h3>Prácticas de laboratorio y proyectos de clase</h3>
+            <p class="meta">Durante el grado</p>
+            <p>Montaje de equipos, instalación de sistemas operativos y creación de redes locales en entornos de práctica.</p>
+          </li>
+          <li>
+            <h3>Formación en empresa (FCT)</h3>
+            <p class="meta">Próximamente</p>
+            <p>Busco una empresa donde aplicar lo aprendido y seguir creciendo en sistemas, redes o desarrollo web.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="t-proy">
+      <div class="container">
+        <h2 id="t-proy">Proyectos desarrollados</h2>
+        <p class="section-intro">Una selección de trabajos de clase y personales. Cada tarjeta enlaza a su código y a su demo.</p>
+        <div class="projects">
+          <!-- EDITAR: cambia títulos, textos y enlaces -->
+          <article class="project">
+            <div class="thumb thumb-1" role="img" aria-label="Imagen de marcador de posición del proyecto Red local virtualizada"></div>
+            <div class="project-body">
+              <h3>Red local virtualizada</h3>
+              <ul class="chips chips-sm"><li>VirtualBox</li><li>Linux</li><li>TCP/IP</li></ul>
+              <p>Laboratorio con varias máquinas virtuales conectadas entre sí. Me sirvió para practicar subredes y servicios básicos sin tocar hardware real.</p>
+              <div class="links">
+                <a href="https://github.com/TU-USUARIO/red-virtual" target="_blank" rel="noopener">Ver código<span class="sr-only"> de Red local virtualizada (se abre en otra pestaña)</span></a>
+                <a href="#" target="_blank" rel="noopener">Ver demo en vivo<span class="sr-only"> de Red local virtualizada (se abre en otra pestaña)</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="thumb thumb-2" role="img" aria-label="Imagen de marcador de posición del proyecto Guía de diagnóstico de PC"></div>
+            <div class="project-body">
+              <h3>Guía de diagnóstico de PC</h3>
+              <ul class="chips chips-sm"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <p>Web interactiva con pasos para detectar averías comunes. Reduce el tiempo de búsqueda del fallo a un recorrido de preguntas sencillas.</p>
+              <div class="links">
+                <a href="https://github.com/TU-USUARIO/guia-diagnostico" target="_blank" rel="noopener">Ver código<span class="sr-only"> de Guía de diagnóstico de PC (se abre en otra pestaña)</span></a>
+                <a href="#" target="_blank" rel="noopener">Ver demo en vivo<span class="sr-only"> de Guía de diagnóstico de PC (se abre en otra pestaña)</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="thumb thumb-3" role="img" aria-label="Imagen de marcador de posición del proyecto Inventario de equipos"></div>
+            <div class="project-body">
+              <h3>Inventario de equipos</h3>
+              <ul class="chips chips-sm"><li>JavaScript</li><li>LocalStorage</li></ul>
+              <p>Aplicación para registrar ordenadores y su estado. Mantiene los datos en el navegador y permite filtrar por tipo de equipo.</p>
+              <div class="links">
+                <a href="https://github.com/TU-USUARIO/inventario" target="_blank" rel="noopener">Ver código<span class="sr-only"> de Inventario de equipos (se abre en otra pestaña)</span></a>
+                <a href="#" target="_blank" rel="noopener">Ver demo en vivo<span class="sr-only"> de Inventario de equipos (se abre en otra pestaña)</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="thumb thumb-4" role="img" aria-label="Imagen de marcador de posición del proyecto Portafolio personal"></div>
+            <div class="project-body">
+              <h3>Portafolio personal</h3>
+              <ul class="chips chips-sm"><li>HTML5</li><li>CSS3</li><li>GitHub Pages</li></ul>
+              <p>Esta misma web: responsive, accesible y publicada sin servidores. Reúne mi formación, mis habilidades y mis trabajos en un solo sitio.</p>
+              <div class="links">
+                <a href="https://github.com/TU-USUARIO/TU-USUARIO.github.io" target="_blank" rel="noopener">Ver código<span class="sr-only"> del Portafolio personal (se abre en otra pestaña)</span></a>
+                <a href="#inicio">Ver demo en vivo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto" aria-labelledby="t-contacto">
+      <div class="container split">
+        <div>
+          <h2 id="t-contacto">Trabajemos juntos</h2>
+          <p class="section-intro">Cuéntame qué necesitas o qué oportunidad tienes. Te respondo lo antes posible.</p>
+          <ul class="social">
+            <li><a href="mailto:aaronsamuel2004@gmail.com">Email<span class="sr-only">: aaronsamuel2004@gmail.com</span></a></li>
+            <li><a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">GitHub<span class="sr-only"> (se abre en otra pestaña)</span></a></li>
+            <li><a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (se abre en otra pestaña)</span></a></li>
+            <li><a href="https://www.behance.net/TU-USUARIO" target="_blank" rel="noopener">Behance<span class="sr-only"> (se abre en otra pestaña)</span></a></li>
+          </ul>
+        </div>
+        <form class="form" id="form" novalidate>
+          <div class="field">
             <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nombre">
+            <p class="error" id="e-nombre" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <p class="error" id="e-email" aria-live="polite"></p>
+          </div>
+          <div class="field">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            <p id="form-msg" role="alert"></p>
-            <button type="submit" class="btn btn--main">Abrir mi correo con el mensaje</button>
-          </form>
-        </div>
+            <textarea id="mensaje" name="mensaje" rows="5" required aria-describedby="e-mensaje"></textarea>
+            <p class="error" id="e-mensaje" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-status" id="status" role="status"></p>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap">© <span id="year"></span> Aarón Andrés. Hecho a mano con HTML, CSS y JavaScript.</div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Aarón Andrés. Todos los derechos reservados.</p>
+      <p>Diseño y desarrollo propios con HTML, CSS y JavaScript.</p>
+      <a href="#top" class="to-top">Volver arriba</a>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
