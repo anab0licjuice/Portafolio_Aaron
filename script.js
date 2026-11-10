@@ -12,12 +12,11 @@ const ICON = {
 };
 
 /* ===== Datos: habilidades y proyectos (edita aquí) ===== */
-const TECH = [["HTML5","code"],["CSS3","code"],["JavaScript","code"],["Desarrollo web","globe"],["Sistemas operativos","server"],["Redes informáticas","net"],["Administración de sistemas","server"],["Git y GitHub","git"]];
+const TECH = [["HTML5","code"],["CSS3","code"],["JavaScript","code"],["Desarrollo web","globe"],["Sistemas operativos","server"],["Redes informáticas","net"],["Administración de sistemas","server"],["Git y GitHub","git"],["Docker y DockerHub","server"]];
 const SOFT = ["Trabajo en equipo","Resolución de problemas","Adaptabilidad","Aprendizaje continuo","Organización","Creatividad"];
 const PROJECTS = [  // url / github: pon el enlace o deja "" si aún no existe
-  {name:"Proyecto 1",desc:"Espacio reservado. Aquí irá la descripción de tu primer proyecto.",stack:["HTML5","CSS3","JavaScript"],url:"",github:"",pending:true},
-  {name:"Proyecto 2",desc:"Espacio reservado. Describe qué problema resuelve y qué aprendiste.",stack:["Por definir"],url:"",github:"",pending:true},
-  {name:"Proyecto 3",desc:"Espacio reservado para un proyecto de redes o administración de sistemas.",stack:["Por definir"],url:"",github:"",pending:true}
+  {name:"Configuración red GNS3",desc:"Descripción pendiente de completar.",stack:["GNS3","Redes"],url:"",github:"",pending:true},
+  {name:"Página web Portafolio",desc:"Este mismo portfolio, creado con HTML5, CSS3 y JavaScript sin librerías.",stack:["HTML5","CSS3","JavaScript"],url:"",github:"",pending:true}
 ];
 
 /* ===== Utilidades ===== */
